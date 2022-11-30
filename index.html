@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contacts</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<ul class="header__menu menu">
+					<li class="menu__item">
+						<a class="menu__link" href="#first-task">Основи синтаксису JAVASCRIPT</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link" href="#second-task">Змінні у JAVASCRIPT</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link" href="#
+						third-task">Типи даних JAVASCRIPT</a>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<main class="page">
+			<script src="js/script.js"></script>
+			<section class="first-task" id="first-task">
+				<div class="first-task__container">
+					<h2 class="first-task__title title">
+						Основы синтаксиса JAVASCRIPT. Структура кода. Инструкции. Режим use strict. Уроки JAVASCRIPT с нуля.
+					</h2>
+					<div class="first-task__task task">
+						<div class="task__item task-title">
+							//№1
+						</div>
+						<div class="task__item task-condition">
+							<span class="red">console</span>.log<span class="red">('Учим JS')</span>;
+						</div>
+						<div class="task__item task-answer task-answer--good">
+							Все добре
+						</div>
+					</div>
+					<div class="first-task__task task">
+						<div class="task__item task-title">
+							//№2
+						</div>
+						<div class="task__item task-condition">
+							<div class="task-condition__line"> <span class="red">console</span>.log<span
+									class="red">('JS')</span>;</div>
+							<div class="task-condition__line">
+								<span class="red">
+									console</span>.log<span class="red">('Учим')
+								</span>;
+							</div>
+						</div>
+						<div class="task__item task-answer task-answer--good">
+							Все добре
+						</div>
+					</div>
+					<div class="first-task__task task">
+						<div class="task__item task-title">
+							//№3
+						</div>
+						<div class="task__item task-condition">
+							<div class="task-condition__line"> <span class="red">console</span>.log<span
+									class="red">('Учим')</span>
+								<span class="red">console</span>.log<span class="red">('JS')</span>
+							</div>
+						</div>
+						<div class="task__item task-answer task-answer--bad">
+							В третьому варіанті помилка, щоб код був виконаний в консолі потрібно: <br> 1) записати кожну з
+							команд
+							на окрему строку <br> 2) в кінці поставити ';'<br>
+							console.log('Учим');<br>
+							console.log('JS');
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="second-task" id="second-task">
+				<div class="second-task__container">
+					<h2 class="second-task__title title">
+						Переменные в JAVASCRIPT. Константы. Ключевые слова LET CONST VAR.
+					</h2>
+					<div class="second-task__task task">
+						<div class="task__item task-title">
+							//№1
+						</div>
+						<div class="task__item task-condition">
+							<div class="task-condition__line"> <span class="red">let </span>userText=<span class="red">
+									'Вася'</span>
+								<span class="red">let </span>age=<span class="red">
+									36</span>
+							</div>
+						</div>
+						<div class="task__item task-answer task-answer--bad">
+							Помилка в записі строки, якщо записувати в одну строку <span class="black">let userText = 'Вася';
+								age = 36;</span><br>
+							let userText = 'Вася';<br>
+							let age = 36;
+						</div>
+					</div>
+					<div class="first-task__task task">
+						<div class="task__item task-title">
+							//№2
+						</div>
+						<div class="task__item task-condition">
+							<span class="red">let </span>myage = <span class="red">36</span>;
+						</div>
+						<div class="task__item task-answer task-answer--good">
+							Порушення синтксису в консолі це не відображається, як помилка але краще написати myAge
+						</div>
+					</div>
+					<div class="first-task__task task">
+						<div class="task__item task-title">
+							//№3
+						</div>
+						<div class="task__item task-condition">
+							<span class="red">const </span>BLOCK_SIZE = <span class="red">14 + 50</span>;
+						</div>
+						<div class="task__item task-answer task-answer--good">
+							Все добре
+						</div>
+					</div>
+					<div class="first-task__task task">
+						<div class="task__item task-title">
+							//№4
+						</div>
+						<div class="task__item task-condition">
+							<span class="red">const </span>BLOCK_HEIGHT = <span class="red">100</span>;
+						</div>
+						<div class="task__item task-answer task-answer--good">
+							Все добре
+						</div>
+					</div>
+					<div class="first-task__task task">
+						<div class="task__item task-title">
+							//№5
+						</div>
+						<div class="task__item task-condition">
+							<div class="task-condition__line"> <span class="red">if (true)</span>{ var size =<span class="red">
+									15</span>;}</div>
+							<div class="task-condition__line">
+								<span class="red">
+									console</span>.log<span class="red">(size)
+								</span>;
+							</div>
+						</div>
+						<div class="task__item task-answer task-answer--good">
+							Все добре
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="third-task" id="third-task">
+				<div class="third-task__container">
+					<h2 class="third-task__title title">
+						Типы данных JAVASCRIPT. Null String Undefined Boolean Number и другие.
+					</h2>
+					<div class="third-task__task task">
+						<div class="task__item task-title">
+							//№1
+						</div>
+						<div class="task__item task-condition">
+							<div class="task-condition__line"> <span class="red">let </span>userAge =<span class="red">
+									36</span>;</div>
+							<div class="task-condition__line"> <span class="red">let </span>userInfo =<span class="red">
+									"Фрилансер ${userAge}"</span>;</div>
+						</div>
+						<div class="task__item task-answer task-answer--good">
+							Все добре
+						</div>
+					</div>
+					<div class="third-task__task task">
+						<div class="task__item task-title">
+							//№2
+						</div>
+						<div class="task__item task-condition">
+							<div class="task-condition__line"> <span class="red">let </span>userHeight =<span class="red">
+									145 / 0</span>;</div>
+							<div class="task-condition__line"> <span class="red">console</span>.log<span class="red">
+									(userHeight)</span>;</div>
+						</div>
+						<div class="task__item task-answer task-answer--bad">
+							В цьому випадку результатом ділення на нуль буде нескінченність
+						</div>
+					</div>
+					<div class="third-task__task task">
+						<div class="task__item task-title">
+							//№3
+						</div>
+						<div class="task__item task-condition">
+							<div class="task-condition__line"> <span class="red">let </span>userFirstName;</div>
+							<div class="task-condition__line"> <span class="red">console</span>.log<span class="red">
+									(typeof userFirstName)</span>;</div>
+						</div>
+						<div class="task__item task-answer task-answer--bad">
+							Значення не визначене тому, як результат в цьому випадку null не може бути
+						</div>
+					</div>
+					<div class="third-task__task task">
+						<div class="task__item task-title">
+							//№4
+						</div>
+						<div class="task__item task-condition">
+							<div class="task-condition__line"> <span class="red">let </span>userHeight =<span class="red">
+									"45" / "8"</span>;</div>
+							<div class="task-condition__line"> <span class="red">console</span>.log<span class="red">
+									(typeof userSize)</span>;</div>
+						</div>
+						<div class="task__item task-answer task-answer--good">
+							Все добре
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer"></footer>
+	</div>
+</body>
+
+</html>
